@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Cleaning Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container main_container_desktop">
+        <h2 class="form_title">Stores Cleaning Record</h2>
+        <form class="form" action="" autocomplete="off">
+            <div class="form_item">
+                <label for="store-date">Select Date</label>
+                <input type="date" name="store-date" id="store-date" required>
+            </div>
+            <div class="form_item">
+                <label for="store-time">Select Time</label>
+                <input type="time" name="store-time" id="store-time" required>
+            </div>
+            <div class="form_item">
+                <label for="store-item">Select Item</label>
+                <select name="store-item" id="store-item" required>
+                    <option value="" disabled selected>Select Item</option>
+                    <option value="Floor">Floor</option>
+                    <option value="Wall/Window/Vents">Wall/Window/Vents</option>
+                    <option value="Ceiling">Ceiling</option>
+                    <option value="Tubs">Tubs</option>
+                    <option value="Palettes">Palettes</option>
+                    <option value="Shelves/Racks">Shelves/Racks </option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label for="store-type">Types of Cleaning</label>
+                <input type="text" name="store-type" id="store-type" placeholder="Enter Chemical Used" required>
+            </div>
+            <button type="submit" class="submit_btn">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

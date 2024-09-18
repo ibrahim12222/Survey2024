@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thawing Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container main_container_desktop">
+        <h2 class="form_title">Thawing Record</h2>
+        <form class="form" action="" autocomplete="off">
+            <div class="form_item">
+                <label for="thawing-item"> Item</label>
+                <input type="text" name="thawing-item" id="thawing-item" placeholder="Enter Item" required>
+            </div>
+            <div class="form_item">
+                <label for="thawing-batch"> Batch</label>
+                <input type="text" name="thawing-batch" id="thawing-batch" placeholder="Enter Batch" required>
+            </div>
+            <div class="form_item">
+                <label for="thawing-start"> Start Time</label>
+                <input type="time" name="thawing-start" id="thawing-start" required>
+            </div>
+            <div class="form_item">
+                <label for="thawing-end"> End Time</label>
+                <input type="time" name="thawing-end" id="thawing-end" required>
+            </div>
+            <div class="form_item">
+                <label>Mode</label>
+                <div class="radio_flex">
+                    <div class="radio_item">
+                        <input type="radio" id="Fridge" name="thawing-mode" required>
+                        <label for="Fridge">Fridge</label>
+                    </div>
+                    <div class="radio_item">
+                        <input type="radio" id="Water" name="thawing-mode" required>
+                        <label for="Water">Running Water</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form_item">
+                <label for="thawing-temp">Temp&deg;C in Fridge</label>
+                <input type="number" name="thawing-temp" id="thawing-temp" placeholder="Enter Humidilty" required>
+            </div>
+            <div class="form_item">
+                <div class="radio_item">
+                    <input type="checkbox" name="thawing-driptray" id="thawing-driptray" required>
+                    <label for="thawing-driptray">Driptray Used</label>
+                </div>
+            </div>
+            <button type="submit" class="submit_btn">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

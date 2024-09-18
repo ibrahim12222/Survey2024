@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity Monitoring Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container main_container_desktop">
+        <h2 class="form_title">Temperature and Humidity Monitoring Record</h2>
+        <form class="form" action="" autocomplete="off">
+            <div class="form_item">
+                <label for="hum-date"> Date</label>
+                <input type="date" name="hum-date" id="hum-date" required>
+            </div>
+            <div class="form_item">
+                <label for="hum-time"> Time</label>
+                <input type="time" name="hum-time" id="hum-time" required>
+            </div>
+            <div class="form_item">
+                <label for="hum-temp">Temp&deg;C</label>
+                <input type="number" name="hum-temp" id="hum-temp" placeholder="Enter Temp&deg;C" required>
+            </div>
+            <div class="form_item">
+                <label for="hum-humidy">Humidilty</label>
+                <input type="number" name="hum-humidy" id="hum-humidy" placeholder="Enter Humidilty" required>
+            </div>
+            <button type="submit" class="submit_btn">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

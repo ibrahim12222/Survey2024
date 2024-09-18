@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main_container main_container_desktop">
+        <h2 class="form_title">Login </h2>
+        <form method="post" action="?">
+            <div class="form_item">
+                <input type="text" id="login" class="fadeIn second admin-login " name="login" placeholder="Mobile"
+                    required>
+                <input type="submit" class="fadeIn fourth submit_btn" value="Login" id="sub_btn" name="sub_btn">
+            </div>
+        </form>
+    </div>
+
+
+    <div class="main_container main_container_desktop">
+        <h2 class="form_title">Login OTP is sent to your mobile. </h2>
+        <form method="post" action="?">
+            <div class="form_item">
+                <input type="hidden" id="login" name="login" value="<?php echo $_POST['login']; ?>">
+                <input type="text" id="otp" class="fadeIn second admin-login " name="otp" placeholder="otp" required>
+                <input type="submit" class="fadeIn fourth submit_btn" value="Verify" id="otp_btn" name="otp_btn">
+                <p class="resend_otp"><a href="#" class="resend ">Resend OTP</a></p>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
